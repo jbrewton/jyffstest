@@ -43,3 +43,28 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'haml-rails'
+gem 'high_voltage'
+gem 'mysql2', '~> 0.3.18'
+gem 'pundit'
+gem 'simple_form'
+gem 'thin'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_21]
+  gem 'foreman'
+  gem 'html2haml'
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+end
+
