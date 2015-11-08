@@ -5,7 +5,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'aws-sdk-rails', '~> 1.0'
+gem 'dotenv-rails', '~> 2.0.2'
+gem 'redis'
+gem 'tubesock'
+gem "i18n-js", ">= 3.0.0.rc11"
+gem "loofah-activerecord"
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

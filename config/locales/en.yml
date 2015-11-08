@@ -20,4 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_name: "Koalas in the Rain"
+  name_required: "Name is required."
+  msg_required: "A message is required."
+  name: "Name"
+  message: "Message"

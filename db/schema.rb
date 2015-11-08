@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151107021920) do
+ActiveRecord::Schema.define(version: 20151107212427) do
+
+  create_table "message_items", force: :cascade do |t|
+    t.text     "message",    limit: 65535
+    t.integer  "poster_id",  limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "message_items", ["poster_id"], name: "index_message_items_on_poster_id", using: :btree
+
+  create_table "posters", force: :cascade do |t|
+    t.string "name", limit: 255
+  end
+
+  add_index "posters", ["name"], name: "index_posters_on_name", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false

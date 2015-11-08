@@ -1,0 +1,1 @@
+$redis = Redis.new(:host => ENV['CACHE_NODE'], :port => 6379)
