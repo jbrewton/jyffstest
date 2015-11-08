@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
 gem 'rails', '4.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,7 +18,7 @@ gem 'high_voltage'
 gem 'mysql2', '~> 0.3.18'
 gem 'pundit'
 gem 'simple_form'
-gem 'thin'
+gem 'puma'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
