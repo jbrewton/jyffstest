@@ -13,5 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require i18n
+//= require i18n/translations
+//= require jquery.turbolinks
+//= require jquery.readyselector
+//= require jquery.form.min
 //= require bootstrap-sprockets
 //= require_tree .

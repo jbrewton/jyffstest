@@ -1,9 +1,19 @@
 !!!
 %html
   %head
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      %title= content_for?(:title) ? yield(:title) : I18n.t("app_name")
+      %meta{:content => content_for?(:description) ? yield(:description) : I18n.t("app_name"), :name => "description"}
+        = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+        = javascript_include_tag 'application', 'data-turbolinks-track' => true
+        = csrf_meta_tags
+        / Custom Fonts
+        %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", :rel => "stylesheet"}
+
+        = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+        = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css', media: 'all', 'data-turbolinks-track' => true
+
+        %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic", :rel => "stylesheet", :type => "text/css"}
   %body
     %header
-      = render 'layouts/navigation'
-    %main{:role => "main"}
-      = render 'layouts/messages'
-      = yield
+    = yield

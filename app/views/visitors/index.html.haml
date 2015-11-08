@@ -1,0 +1,22 @@
+%header#top.header
+  .container
+    .row.message-row
+      .col-xs-1
+      .col-xs-10.message-column
+        .well.output-wrapper
+          #previous_messages
+          #output
+        .message-form
+          %form#chat_message
+            = hidden_field_tag :authenticity_token, form_authenticity_token
+            = hidden_field_tag :utf8, "&#x2713;"
+            .row
+              .col-sm-3
+                .form-group
+                  %input#name.form-control.required{:placeholder => I18n.t("name"), name: "message_item[poster]", value: @name, autocomplete: "off"}
+              .col-sm-9
+                .input-group
+                  %input#message.form-control.required{:placeholder => I18n.t("message"), name: "message_item[message]", autocomplete: "off"}
+                  %span.input-group-btn
+                    %button.btn.btn-default{:type => "submit"}
+                      %i.fa.fa-comment-o
