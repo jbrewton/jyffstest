@@ -34,20 +34,16 @@ The server has installed all of the basic Ruby gems/
 services etc.. needed to communicate with the database and handle web requests
 
 ·      
-Use of open source 3
-
-rd party
+Use of open source 3rd party
 Javascript libraries (Jquery, Bootstrap, Angular, Node .. whatever) 
 
 ·      
-The HTML layout should make use of at least some
-basic CSS-based formatting
+The HTML layout should make use of at least some basic CSS-based formatting
 
-Take as much time as it takes to meet your definition of
-done.
+Take as much time as it takes to meet your definition of done.
 
 When complete, please submit all of the assets that will
-allow the application to be deployed:
+allow the application to be deployed: 
 
 ·      
 A SQL file to create any necessary database
